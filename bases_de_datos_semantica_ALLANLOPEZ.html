@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bases de datos semántica</title>
+</head>
+<body>
+    
+<header>
+     <p id ="Inicio"></p>
+
+    <h1>Introducción a las Bases de Datos</h1>
+    
+    <nav>
+        <ul>
+
+            <li><a href="#Conceptos_Tipos">Conceptos y Tipos</a></li>
+            <li><a href="#Estructura_Datos">Estructura de Datos</a></li>
+            <li><a href="#Relaciones">Relaciones</a></li>
+            <li><a href="#Recursos_interés">Recursos de interés</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section id = "Conceptos_Tipos">
+
+        <h1>Concepto y Tipos de Bases de Datos</h1>
+        <article>
+            <h2>Bases de datos Relacionales (RDBMS)</h2>
+                <p>Una base de datos relacional es una colección de información que organiza datos en relaciones predefinidas, en la que los datos se almacenan en una o más tablas (o "relaciones") de columnas y filas, lo que facilita la visualización y la comprensión de cómo se relacionan las diferentes estructuras de datos entre sí. Las relaciones son conexiones lógicas entre las diferentes tablas y se establecen a partir de la interacción entre ellas.</p>
+                <p>Algunos de los RDBMS más conocidos son MySQL, PostgreSQL, MariaDB, Microsoft SQL Server y Oracle Database. </p>
+
+        </article>  
+        
+        <article>
+            <h2>Bases de datos No Relacionales (NoSQL)</h2>
+            <p>NoSQL, también conocido como "no sólo SQL" o "no SQL", es un enfoque utilizado en el diseño de bases de datos que permite el almacenamiento y consulta de datos fuera de las estructuras tradicionales que se encuentran en las bases de datos relacionales.</p>
+            <p>Una base de datos <b>orientada a documentos</b> almacena datos en documentos similares a los objetos JSON (JavaScript Object Notation). Cada documento contiene pares de campos y valores.
+                Ejemplos de bases de datos documentales son MongoDB y Couchbase. </p>
+            <p>Una base de datos <b>clave-valor</b> es un tipo de base de datos más simple en la que cada artículo contiene claves y valores. Cada clave es única y está asociada con un valor individual. Se usan para caché y gestión de sesiones, y ofrecen alto rendimiento en lecturas y escrituras porque tienden a almacenar cosas en la memoria. Los ejemplos son Amazon DynamoDB y Redis.</p>
+            <p>Una base de datos de <b>grafos</b> almacena datos en forma de nodos y aristas. Los nodos suelen almacenar información sobre personas, lugares y cosas (como sustantivos), mientras que las aristas almacenan información sobre las relaciones entre los nodos. Ejemplos de bases de datos de grafos con Neo4J y Amazon Neptune.</p>
+
+        </article>
+
+    </section>
+
+    <section id="Estructura_Datos">
+
+        <h1>Estructura de una Base de Datos Relacional</h1>
+
+        <article>
+            <ul>
+              <li><b>Tablas (Entidades):</b> Estructuras donde se organizan los datos.</li>
+              <li><b>Campos (Atributos):</b> Columnas que definen la tipología de información.</li>
+              <li><b>Registros (Tuplas):</b> Filas que contienen cada instancia concreta de datos.</li>
+              <li><b>Claves primarias (Primary Keys):</b> Identificadores únicos de cada registro.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="Relaciones">
+
+        <h1>Relaciones entre Tablas</h1>
+
+        <article>
+            <p>Uno de los aspectos fundamentales de las bases de datos relacionales son precisamente las relaciones. En pocas palabras, una «relación» es una asociación que se crea entre tablas, con el fin de vincularlas y garantizar la integridad referencial de sus datos.</p>
+            <ul>
+                <li><b>Relación 1:1 (Uno a uno): </b> Una Relación uno a uno es un vínculo entre la información de dos tablas, donde cada registro en cada tabla solo aparece una vez. Por ejemplo, puede haber una relación uno a uno entre los empleados y los coches que conducen. Cada empleado solo aparece una vez en la tabla Empleados y cada coche aparece solo una vez en la tabla Automóviles de empresa.</li>
+                <br>
+                <li><b>Relación 1:N (Uno a muchos): </b> Una relación uno a muchos describe el escenario en el que un registro de una tabla puede vincularse a varios registros de otra tabla. En términos sencillos, significa que una cosa existe una sola vez, pero puede conectarse con muchas otras cosas relacionadas. Por ejemplo, un mismo cliente puede realizar muchos pedidos, pero cada pedido pertenece a un solo cliente.</li>
+                <br>
+                <li><b>Relación N:M (Muchos a muchos): </b> Una relación de muchos a muchos se produce cuando varios registros de una tabla se asocian a varios registros de otra tabla. Por ejemplo, existe una relación de muchos a muchos entre los clientes y los productos: los clientes pueden comprar varios productos y los productos pueden ser comprados por muchos clientes.</li>
+
+            </ul>
+
+            <h2>Cláves Foráneas (Foreign Key)</h2>   
+                <p>Una clave foránea es una columna o un conjunto de columnas en una tabla cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de clave foránea específico, debe existir una fila en la tabla relacionada con el mismo valor de clave primaria.</p>
+
+
+        </article>
+
+
+    </section>
+
+       <p id="Recursos_interés">
+       <aside>
+        
+       
+
+        <h1>Información Adicional</h1>
+            <h2>Glosario de términos</h2>
+             <dl>
+            
+                    <b><dt>SQL</dt></b><dd>El lenguaje de consulta estructurada (SQL) es un lenguaje de programación para almacenar y procesar información en una base de datos relacional. Una base de datos relacional almacena información en forma de tabla, con filas y columnas que representan diferentes atributos de datos y las diversas relaciones entre los valores de datos.  </dd>
+                    <br>
+                    <b><dt>SGBD</dt></b><dd>El objetivo principal de un SGBD es proporcionar una manera sistemática y organizada de manejar datos que garantice su integridad, seguridad y accesibilidad, tanto en modelos locales como en la nube.  </dd>
+                    <br>
+                    <b><dt>Normalización</dt></b><dd>La normalización de bases de datos es un proceso de diseño de bases de datos que organiza los datos en estructuras de tablas específicas. Ayuda a mejorar la integridad de los datos, prevenir anomalías de datos, minimizar la redundancia de datos y reforzar el rendimiento de las consultas.  </dd> 
+            
+             </dl>
+
+             <h2>Enlaces recomendados</h2>
+                 <ul>
+
+                     <li><a href ="https://www.ibm.com/es-es" target="_blank">IBM página oficial</a></li>
+                     <li><a href="https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-are-databases" target="_blank">Microsoft: Bases de Datos</a></li>
+                     <li><a href="https://aws.amazon.com/es/what-is/sql/" target="_blank">AWS: Sobre SQL</a></li>
+
+                  </ul>
+    </aside>
+
+
+</main>
+
+    <footer>
+        <br>
+        <p>Allan López Hernández 1º de ASIR</p>
+        <p>&copy; Todos los derechos reservados.<p>
+        <a href="#Inicio">Página de Inicio</a>
+
+    </footer>
+ 
+
+
+</body>
+</html>
