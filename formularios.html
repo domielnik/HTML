@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    
+    <h3>Formulario 1</h3>
+
+
+    
+    <form method="post" action="index.html">
+
+        <label for="colorP">Elija un color: </label>   
+        <input type="color" id="colorP" value="#fffff"> 
+        <br>
+        <textarea id="colorP" name="mensaje" rows="5" cols="53" placeholder="Porfavor, escriba aquí"></textarea>
+
+        <br>
+
+        <lable for="opciones"></lable>
+        <select id="opciones">
+        
+            <optgroup label="Lenguaje">
+                <option value="java">Java</option>    
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="visual_basic">Visual Basic</option>
+
+            </optgroup>
+        </select>
+
+        <br>
+
+        <input type="checkbox" id="cicloasir" name="cicloasir" value="cicloasir">
+        <label for="cicloasir">ASIR</label>
+        <input type="checkbox" id="ciclodam" name="ciclodam" value="ciclodam">
+        <label for="ciclodam">DAM</label>
+        <input type="checkbox" id="ciclodaw" name="ciclodaw" value="ciclodaw">
+        <label for="ciclodaw">DAW</label>
+        
+
+
+
+        <br>
+        <br>
+
+        <label for="fecha">Elija una fecha:</label>
+        <input id ="fecha" type="date" name="correo" required>
+
+        <br>
+
+        <lable for="fichero">Elija un fichero:</lable>
+        <input id="fichero" type="file" name="fichero">
+
+        <br>
+
+        <lable for="multiple" ></lable>
+        <select id="multiple" multiple>
+        
+            <optgroup label="ciclo">
+                <option value="smir">SMIR</option>    
+                <option value="asir">ASIR</option>
+                <option value="dam">DAM</option>
+                <option value="daw">DAW</option>
+
+            </optgroup>
+        </select>
+    </form>
+
+    <br>
+
+    <h3>Formulario 2</h3>
+
+        <form>
+
+            <input type="radio" id="asignatura" name="asignatura" value="asignaturalengua">
+            <label for="asignatura">Lengua</label><br>
+            <input type="radio" id="asignaturamates" name="asignatura" value="asignaturamates">
+            <label for="asignaturamates">Matemáticas</label><br>
+            <input type="radio" id="asignaturahistoria" name="asignatura" value="asignaturahistoria">
+            <label for="asignaturahistoria">Historia</label><br>
+            <input type="radio" id="asignaturageografia" name="asignatura" value="asignaturageografia">
+            <label for="asignaturageografia">Geografía</label><br>
+
+            <br>
+
+            <input type="checkbox" id="notepad" name="editor" value="editornotepad">
+            <label for="notepad">Notepad</label>
+            <input type="checkbox" id="emacs" name="editor" value="editoremacs">
+            <label for="emacs">Emacs</label>
+            <input type="checkbox" id="otro" name="otro" value="editorotro">
+            <label for="otro">Otro</label>
+        
+            <br>
+
+             <textarea name="mensaje" rows="5" cols="59" placeholder="Escriba aquí, porfavor"></textarea>
+
+            <br>
+
+            <lable for="procesador" ></lable>
+            <select id="procesador">
+        
+            <optgroup label="procesador">
+                <option value="amd">AMD</option>    
+                <option value="intel_i5">Intel i5</option>
+                <option value="intel_i7">Intel i7</option>
+
+            </optgroup>
+        </select>
+
+    </form>
+
+    <br>
+
+    <h3>Formulario 3</h3>
+
+    <form>
+
+
+    <form>
+
+            <input type="radio" id="asignaturageografia" name="asignatura" value="asignaturageografia">
+            <label for="asignaturageografia">Geografía</label>
+            <input type="radio" id="asignatura" name="asignatura" value="asignaturalengua">
+            <label for="asignatura">Lengua</label>
+            <input type="radio" id="asignaturamates" name="asignatura" value="asignaturamates">
+            <label for="asignaturamates">Matemáticas</label>
+            <input type="radio" id="asignaturahistoria" name="asignatura" value="asignaturahistoria">
+            <label for="asignaturahistoria">Historia</label>
+            
+            
+            <br>
+
+            <label for="hora">Elija una hora:</label>
+            <input type="time" id="hora" name="hora">
+
+            <br>
+
+            <input type="checkbox" id="idiomaespanol" name="idioma" value="idiomaespanol">
+            <label for="idiomaespanol">Español</label><br>
+            <input type="checkbox" id="idiomaingles" name="idioma" value="idiomaingles">
+            <label for="idiomaingles">Inglés</label><br>
+            <input type="checkbox" id="idiomaaleman" name="idioma" value="idiomaaleman">
+            <label for="idiomaaleman">Alemán</label><br>
+            <input type="checkbox" id="idiomafrances" name="idioma" value="idiomafrances">
+            <label for="idiomafrances">Francés</label><br>
+
+            <br>
+           
+            <label for="name">Nombre</label>
+            <input id="name" type="text">
+
+            <br>
+
+            <label for="name">Apellidos</label>
+            <input id="name" type="text">
+
+    </form>
+
+</body>
+</html>
