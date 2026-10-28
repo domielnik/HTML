@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+</head>
+<body>
+    
+    <header>
+        <p id="Inicio"></p>
+
+        <h1>TechOps & SysAdmin Blog</h1>
+
+    <p>La infraestructura de TI es el conjunto de software, hardware, redes y servicios conectados que componen el entorno de TI de una organización. Cada componente de la infraestructura de TI brinda servicios distintos y contribuye a la eficiencia general del sistema. Existe una amplia gama de componentes que conforman todo el sistema de infraestructura de TI.</p>
+
+    <h2>Navegador</h2>
+    <nav>
+        <ul>
+            <li><a href="#article1">El gran fallo de Brotlin</a></li>
+            <li><a href="#article2">La migración a la nube</a></li>
+            <li><a href="#article3">Copias de seguridad</a></li>
+
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <main>
+
+        <article  id ="article1">
+
+            <h2>El gran fallo de Brotlin</h2>
+
+                <section>
+                    <h3>Descripción del problema</h3>
+
+                        <p>Uno de los fallos corregidos afecta al algoritmo de descompresión Brotli, utilizado para procesar determinados datos comprimidos. Identificada como CVE-2026-111497, esta vulnerabilidad puede permitir que un atacante sin autenticar lea o modifique la memoria de un proceso, teniendo en cuenta que entre sus posibles consecuencias figuran la exposición de información, la interrupción del funcionamiento de un servicio y la obtención de privilegios elevados.</p>
+
+                        <p>Además, la vulnerabilidad puede afectar a las aplicaciones que procesan datos comprimidos con Brotli mediante funciones de ASP.NET Core, la descompresión automática de respuestas de HttpClient o las interfaces de la biblioteca System.IO.Compression. Sin embargo, Microsoft aclara que la descompresión de solicitudes y la de respuestas no están activadas de forma predeterminada, ya que la vulnerabilidad no afecta a .NET Framework.</p>
+
+
+                </section>
+
+                <section>
+                    <h3>Solución aplicada</h3>
+                        <p>Microsoft ha publicado una actualización de seguridad fuera de banda (OBB, por sus siglas) para .NET 8, .NET 9 y .NET 10, así como para la tercera versión candidata de .NET 11. Acorde a la información compartida por la compañía, el parche está distribuido fuera del calendario habitual de actualizaciones y corrige varias vulnerabilidades que pueden comprometer la seguridad de las aplicaciones y los sistemas que utilizan estas tecnologías, por ello, Microsoft recomienda instalar las nuevas versiones lo antes posible.</p>
+                        <p>Por otro lado, la actualización también soluciona otro fallo de seguridad que está identificado como CVE-2026-114148 y relacionado con los metadatos de propiedad de los archivos de distribución de .NET para Linux. Según la información compartida, un atacante con acceso local puede modificar archivos y conseguir privilegios elevados, no obstante, el alcance de esta vulnerabilidad varía según la versión. Concretamente, en .NET 10 y .NET 11 afecta a los paquetes utilizados para compilar el código fuente, mientras que en .NET 8 y .NET 9 también alcanza determinadas distribuciones de ASP.NET Core obtenidas mediante estos paquetes.</p>
+
+                          <a href="https://es.wikipedia.org/wiki/Brotli" target="_blank"><img src="imagenes/brotlin.png" height="300" alt="Brotlin vulnerability"></a> 
+
+                </section>
+
+            
+            <p>Publicado por Allan López</p><time data-datetime="2026-10-27">27 de octubre de 2026</time>
+
+             <h4>Comentarios</h4>
+                    <form>
+                        <label for="nombre">usuario</label>
+                        <input type="text" id="nombre"> <br>
+
+                        <label for="correo">email</label>
+                        <input type="email" id="correo"> <br>
+                        <textarea rows="6" cols="43" placeholder="Comentario">
+
+                        </textarea>
+                        <br>
+                        <input type="checkbox" id="politica" name="politica" value="politica">
+                            <label for="politica">Acepta la política de privacidad</label><br>
+                        <input type="submit">
+
+                    </form>
+
+
+
+        </article>
+
+        <br>
+
+        <article id="article2">
+            
+            <h2>Migración de operación de SAP ECC a la nube de SYCLOUD</h2>
+            <section>
+                <h3>Descripción del problema</h3>
+                    <p>Muchas empresas han optado por migrar sus operaciones a la nube para aprovechar los beneficios que esta tecnología ofrece.  Un ejemplo concreto es el de una gran empresa dedicada a la comercialización de gases industriales y médicos. Esta organización decidió trasladar a la nube privada de SYCLOUD su operación de SAP ECC, alojada anteriormente en servidores en sito y con una infraestructura local obsoleta. Definitivamente, en este caso, el proceso de migración presentaba un alto nivel de complejidad, ya que el cliente deseaba cambiar su sistema operativo de Windows a Linux RedHat y su base de datos de SQL a SAP HANA, además de actualizar la aplicación SAP a EHP7.</p>
+                    </section>
+
+            <section>
+                 <h3>Solución aplicada</h3>   
+                    <p>Durante el proceso de migración a la nube, el día en que se realizó el cambio en el entorno productivo, los 250 usuarios de la empresa se conectaron sin percibir ningún fallo, ya que la aplicación SAP ya no estaba alojada localmente. Por el contrario, la velocidad y estabilidad en el sistema habían incrementado de forma notoria. La organización se sintió más segura gracias al diseño segmentado de acceso a las aplicaciones y bases de datos gracias SYCLOUD</p>
+                    </section>
+
+                    <a href="https://aws.amazon.com/es/what-is/cloud-migration/" target="_blank"><img src="imagenes/nube.jpg" height="300" alt="nube"></a>
+
+                    <p>Publicado por Allan López</p><time data-datetime="2026-08-12">12 de agosto de 2026</time>
+
+                     <h4>Comentarios</h4>
+                    <form>
+                        <label for="nombre">usuario</label>
+                        <input type="text" id="nombre"> <br>
+
+                        <label for="correo">email</label>
+                        <input type="email" id="correo"> <br>
+                        <textarea rows="6" cols="43" placeholder="Comentario">
+
+                        </textarea>
+                        <br>
+                        <input type="checkbox" id="politica" name="politica" value="politica">
+                            <label for="politica">Acepta la política de privacidad</label><br>
+                        <input type="submit">
+
+                    </form>
+        </article>
+
+        <br>
+
+        <article id="article3">
+
+            <h2>Copias de seguridad: Buenas prácticas</h2>
+
+                <section>
+                    <h3>Descripción del problema</h3>
+                        <p>Las copias de seguridad son una forma de proteger la información que guardas en tu ordenador, móvil o tablet. Consisten en hacer una copia de los archivos más importantes y guardarlos en otro lugar, como puede ser un disco duro externo o en un servicio de almacenamiento en la nube (servicio cloud). Así, si pierdes o se daña tu dispositivo, puedes recuperar tus datos fácilmente. </p>
+
+                        <p>Tienes la opción de hacer una copia de seguridad manualmente, es decir, serás tú el que de manera proactiva copies aquellos archivos que te parezca más importante salvaguardar en otro soporte o programarla para que se haga automáticamente cada cierto tiempo, despreocupándote de esta forma de la tarea en cuestión. Lo recomendable, independientemente de la forma que elijas, es hacerla con frecuencia y revisarla periódicamente para asegurarte de que la información de la copia de seguridad sigue operativa.</p>
+
+                </section>
+
+                <section>
+                    <h3>Solución aplicada</h3>
+                        <p>En la actualidad disponemos de varios servicios de almacenamiento en la nube, en los que podemos hacer copias de seguridad con la ventaja de tener acceso a esos datos cuando y donde queramos, desde cualquier dispositivo, con el único requisito de disponer conexión a Internet. Los servicios en la nube más populares entre los usuarios son Google Drive, Google One, OneDrive, Amazon Photos, Amazon Drive, Dropbox e iCloud.</p>
+
+                        <p>Además de las opciones nativas que ofrece cada dispositivo, podemos utilizar otras herramientas de terceros que también nos permitirán realizar estas copias de seguridad en los diferentes sistemas operativos.</p>
+
+                        
+                </section>
+
+                    <a href="https://www.incibe.es/ciudadania/filtro/herramientas?tid=124&tid_1=All&tid_2=All&tid_3=All" target="_blank"><img src="imagenes/copias.jpg" height="300" alt="copias de seguridad"></a>
+                         <p>Publicado por Allan López</p><time data-datetime="2026-04-01">01 de abril de 2026</time>
+
+                         
+                       
+
+                    <h4>Comentarios</h4>
+                    <form>
+                        <label for="nombre">usuario</label>
+                        <input type="text" id="nombre"> <br>
+
+                        <label for="correo">email</label>
+                        <input type="email" id="correo"> <br>
+                        <textarea rows="6" cols="43" placeholder="Comentario">
+
+                        </textarea>
+                        <br>
+                        <input type="checkbox" id="politica" name="politica" value="politica">
+                            <label for="politica">Acepta la política de privacidad</label><br>
+                        <input type="submit">
+
+                    </form>
+        
+        </article>
+
+
+    </main>
+
+
+        <aside>
+            <h2>Enlaces de interés</h2>
+            <ul>
+
+                <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/recent-cyber-attacks">Ciberataques recientes</a></li>
+                <li><a href="https://ubuntu.com/engage/es/linux-es-seguro">¿Es Linux seguro?</a></li>
+                <li><a href="https://www.il3.ub.edu/blog/4-decisiones-estrategicas-para-defender-a-tu-organizacion-de-un-ciberataque/">Defenderte de ciberataques</a></li>
+                <li><a href="https://www.microsoft.com/es-es/windows/tips/windows-backup">Copias de seguridad en Windows</a></li>
+
+            </ul>
+
+        </aside>
+
+
+        <footer>
+
+        <br>
+        <p>Allan López Hernández 1º de ASIR</p>
+        <p>&copy; Todos los derechos reservados.<p>
+        <a href="#Inicio">Página de Inicio</a>
+
+
+        </footer>
+
+
+</body>
+</html>
